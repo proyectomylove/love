@@ -1,4 +1,4 @@
-// document.getElementById("backgroundMusic").play();
+document.getElementById("backgroundMusic").play();
 // setTimeout(() => {
 //     document.getElementById("backgroundMusic").play();
 // }, 5000); 
