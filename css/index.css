@@ -903,3 +903,34 @@ h1 {
 }
 
 
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.music-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.music-btn:hover {
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.3);
+}
+
+.music-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
