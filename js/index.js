@@ -1,3 +1,110 @@
+// document.getElementById("backgroundMusic").play();
+setTimeout(() => {
+    document.getElementById("backgroundMusic").play();
+}, 5000); // 5000 ms = 5 segundos
+
+// function toggleMusic() {
+//     const music = document.getElementById('backgroundMusic');
+//     const playIcon = document.getElementById('playIcon');
+//     const pauseIcon = document.getElementById('pauseIcon');
+//     if (!music) {
+//         console.error('No music element found');
+//         return;
+//     }
+//     if (music.paused) {
+//         music.play().then(() => {
+//             console.log('Music playing at:', music.currentTime);
+//             playIcon.style.display = 'none';
+//             pauseIcon.style.display = 'block';
+//         }).catch(error => {
+//             console.error('Error playing audio:', error.message);
+//         });
+//     } else {
+//         music.pause();
+//         console.log('Music paused at:', music.currentTime);
+//         playIcon.style.display = 'block';
+//         pauseIcon.style.display = 'none';
+//     }
+// }
+
+//         window.onload = function() {
+//     const music = document.getElementById('backgroundMusic');
+//     const musicBtn = document.getElementById('musicBtn');
+//     const playIcon = document.getElementById('playIcon');
+//     const pauseIcon = document.getElementById('pauseIcon');
+//     const volumeSlider = document.getElementById('volumeSlider');
+//     const volumeControl = document.getElementById('volumeControl');
+
+//     if (!music || !musicBtn || !volumeSlider || !volumeControl) {
+//         console.error('Music or control elements not found');
+//         return;
+//     }
+
+//     music.volume = volumeSlider.value;
+
+//     music.load();
+//     music.currentTime = 0;
+//     music.play().then(() => {
+//         console.log('Autoplay successful at:', music.currentTime);
+//         playIcon.style.display = 'none';
+//         pauseIcon.style.display = 'block';
+//     }).catch(error => {
+//         console.warn('Autoplay blocked:', error.message);
+//     });
+
+//     musicBtn.addEventListener('click', (e) => {
+//         e.stopPropagation();
+//         toggleMusic();
+//         if (!volumeControl.classList.contains('visible')) {
+//             volumeControl.classList.add('visible');
+//             clearTimeout(hideVolumeTimeout);
+//             hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+//         } else {
+//             volumeControl.classList.remove('visible');
+//         }
+//     });
+
+//     let hideVolumeTimeout = null;
+//     volumeSlider.addEventListener('input', (e) => {
+//         music.volume = e.target.value;
+//         console.log('Volume set to:', music.volume);
+//         clearTimeout(hideVolumeTimeout);
+//         volumeControl.classList.add('visible');
+//     });
+
+//     volumeSlider.addEventListener('change', () => {
+//         hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+//     });
+
+//     volumeControl.addEventListener('mouseenter', () => clearTimeout(hideVolumeTimeout));
+//     volumeControl.addEventListener('mouseleave', () => {
+//         hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+//     });
+
+//     volumeSlider.addEventListener('touchstart', (e) => {
+//         e.stopPropagation();
+//         clearTimeout(hideVolumeTimeout);
+//     });
+//     volumeSlider.addEventListener('touchend', () => {
+//         hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+//     });
+
+//     document.addEventListener('click', (e) => {
+//         if (!volumeControl.contains(e.target) && !musicBtn.contains(e.target)) {
+//             volumeControl.classList.remove('visible');
+//             clearTimeout(hideVolumeTimeout);
+//         }
+//     });
+
+//     music.addEventListener('loadeddata', () => console.log('Audio data loaded'));
+//     music.addEventListener('error', (e) => console.error('Audio error:', e.message));
+//     music.addEventListener('play', () => console.log('Music play event'));
+//     music.addEventListener('pause', () => console.log('Music pause event'));
+// };
+
+
+
+
 (function(){const D=document.createElement("link").relList;if(D&&D.supports&&D.supports("modulepreload"))return;for(const M of document.querySelectorAll('link[rel="modulepreload"]'))se(M);new MutationObserver(M=>{for(const A of M)if(A.type==="childList")for(const X of A.addedNodes)X.tagName==="LINK"&&X.rel==="modulepreload"&&se(X)}).observe(document,{childList:!0,subtree:!0});function m(M){const A={};return M.integrity&&(A.integrity=M.integrity),M.referrerPolicy&&(A.referrerPolicy=M.referrerPolicy),M.crossOrigin==="use-credentials"?A.credentials="include":M.crossOrigin==="anonymous"?A.credentials="omit":A.credentials="same-origin",A}function se(M){if(M.ep)return;M.ep=!0;const A=m(M);fetch(M.href,A)}})();function If(z){return z&&z.__esModule&&Object.prototype.hasOwnProperty.call(z,"default")?z.default:z}var Pu={exports:{}},kr={},zu={exports:{}},F={};/**
  * @license React
  * react.production.min.js
