@@ -1,7 +1,7 @@
-// document.getElementById("backgroundMusic").play();
-setTimeout(() => {
-    document.getElementById("backgroundMusic").play();
-}, 5000); // 5000 ms = 5 segundos
+document.getElementById("backgroundMusic").play();
+// setTimeout(() => {
+//     document.getElementById("backgroundMusic").play();
+// }, 5000); 
 
 // function toggleMusic() {
 //     const music = document.getElementById('backgroundMusic');
