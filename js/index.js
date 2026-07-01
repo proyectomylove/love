@@ -1,4 +1,4 @@
-document.getElementById("backgroundMusic").play();
+// document.getElementById("backgroundMusic").play();
 // setTimeout(() => {
 //     document.getElementById("backgroundMusic").play();
 // }, 5000); 
@@ -102,7 +102,31 @@ document.getElementById("backgroundMusic").play();
 //     music.addEventListener('pause', () => console.log('Music pause event'));
 // };
 
+const music = document.getElementById("backgroundMusic");
+const musicBtn = document.getElementById("musicBtn");
 
+const playIcon = document.getElementById("playIcon");
+const pauseIcon = document.getElementById("pauseIcon");
+
+musicBtn.addEventListener("click", () => {
+
+    if (music.paused) {
+
+        music.play();
+
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+
+    } else {
+
+        music.pause();
+
+        playIcon.style.display = "block";
+        pauseIcon.style.display = "none";
+
+    }
+
+});
 
 
 (function(){const D=document.createElement("link").relList;if(D&&D.supports&&D.supports("modulepreload"))return;for(const M of document.querySelectorAll('link[rel="modulepreload"]'))se(M);new MutationObserver(M=>{for(const A of M)if(A.type==="childList")for(const X of A.addedNodes)X.tagName==="LINK"&&X.rel==="modulepreload"&&se(X)}).observe(document,{childList:!0,subtree:!0});function m(M){const A={};return M.integrity&&(A.integrity=M.integrity),M.referrerPolicy&&(A.referrerPolicy=M.referrerPolicy),M.crossOrigin==="use-credentials"?A.credentials="include":M.crossOrigin==="anonymous"?A.credentials="omit":A.credentials="same-origin",A}function se(M){if(M.ep)return;M.ep=!0;const A=m(M);fetch(M.href,A)}})();function If(z){return z&&z.__esModule&&Object.prototype.hasOwnProperty.call(z,"default")?z.default:z}var Pu={exports:{}},kr={},zu={exports:{}},F={};/**
